@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--aqui estamos chamando o css-->
+    <title>Starbucks</title>
+  </head>
+
+  <body>
+    <!--tudo que está dentro do meu site é meu body-->
+    <div class="circulo"></div>
+
+    <img src="img/logo.png" class="logo" />
+
+    <div class="conteudo">
+      <div class="textos">
+        <h2>It's not just Coffe It's <span>Starbucks</span></h2>
+        <!-- Span é uma tag inline usada para estilizar ou manipular parte de um texto sem alterar o fluxo do conteúdo.-->
+        <p>
+          <!-- P significa parágrafo-->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          dolor iure quam eum quisquam culpa necessitatibus vitae, non repellat,
+          laboriosam esse minus. Repudiandae est, quibusdam nihil quae
+          voluptates dolorum. Laboriosam!
+        </p>
+        <button>Deixe o seu like</button>
+      </div>
+
+      <div class="imagem">
+        <!--sempre que eu quero chamar algum elemento no css eu preciso criar uma classe no html-->
+        <img src="img/img1.png" class="imagem-copo" />
+      </div>
+    </div>
+    <div class="menu">
+      <img
+        src="img/thumb1.png"
+        class="botao-menu"
+        onclick="trocaImagem('img/img1.png', '#017143')"
+      />
+      <!--src é o caminho para o html encontrar algum elemento nas minhas pastas-->
+      <img
+        src="img/thumb2.png"
+        class="botao-menu"
+        onclick="trocaImagem('img/img2.png', '#eb7495')"
+      />
+      <!-- onclick é a ação de clicar no botão-->
+      <img
+        src="img/thumb3.png"
+        class="botao-menu"
+        onclick="trocaImagem('img/img3.png', '#d752b1')"
+      />
+      <!-- trocaImagem("src" , "cor") é a função que criei no arquivo script.js-->
+    </div>
+    <script src="script.js"></script>
+    <!--usamos script quando quisermos chamar a linguagem de programação javascript. E a página deixa de ser somente uma página de marcação e se torna programação-->
+  </body>
+</html>
